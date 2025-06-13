@@ -34,7 +34,7 @@ def process_annotation(ann, images_dict, output_dir, partition, patch_id_start):
     return patch_filename, label
 
 def convert_and_extract_patches_parallel(pklot_dir, output_dir, output_file):
-    partitions = ['train', 'test', 'val']
+    partitions = ['valid']
     patch_id = 0
     
     with open(output_file, 'w') as f_out:
